@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>template for form</title>
+	<style>
+   .container{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+   }
+   #home-text a{
+   	font-size:90px;
+   	font-family: Dishonorable Mention;
+margin-top: 400px;
+background-attachment: fixed;
+color: Black;
+   }
+</style>
+
+   <style type="text/css">
+    body{
+  width: 100%;
+    height: 200px;
+      padding-top:0px;
+      margin-top:0px;
+    padding-bottom: 0px;
+        border: 0px;
+        background: url("https://zoovu.com/blog/wp-content/uploads/the_digital_banking_challenge-.jpg") no-repeat fixed center;
+    background-position:center; 
+      background-size:cover; 
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+      background-origin:padding-box;
+     background-color:initial; 
+      background-opacity:0.50;
+      background-color: Gray;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  padding-top: 40px;
+}
+#demo{
+width:75%;
+margin:100px;
+padding:50px;
+border:50px;
+background-color:Gray;
+color:rgb(250,250,250);
+opacity:0.90;
+font-size:30px bold;
+font-family:arial;
+border-radius: 20px;
+
+}
+.table{
+  color:#ffffff;
+  margin: auto;
+}
+.topnav {
+  overflow: h idden;
+  background-color: #111;
+  position: fixed;
+  top: 0;
+  left:0;
+  right: 0;
+  display: block;
+  box-sizing: border-box;
+  z-index: 1030;
+border-radius: 0;
+width: 100%;
+border-width: 0 0 1px;
+}
+
+.topnav a {
+  float: left;
+  display:block;
+  flex-grow: rgb(250,0,0);
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav a:hover {
+  background-color: Gray;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: Gray;
+  color: white;
+}
+.container{
+  width: 80%;
+  height: 1500px;
+  background-color: rgb(250,250,250);
+  margin-left: auto;
+  margin-right: auto;
+  opacity:0.90;
+
+}
+#field{
+  height: 300px;
+}
+#ap{
+  font-size: 30px;
+}
+
+
+
+</style>
+</head>
+<body>
+	<div class="topnav">
+  <a class="active" href="{{link}}">Home</a>
+</div>
+<div style="padding-left:16px" class="container" id="0">
+<div>
+  <form method="POST" enctype="multipart/form-data" action="predict" id="demo">
+    {% csrf_token %}
+    <fieldset id=field>
+    <legend>LOAN APPLICATION</legend>
+      <div id=ap>
+      <center>{{approval}}</center>
+       </div>
+    </fieldset>
+
+    
+  </form>
+</div>
+
+</div><!____________________CONTAINER_________________!>
+
+
+</body>
+</html>
